@@ -1,0 +1,523 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #eac926;
+    padding: 30px 0 20px 0;
+}
+
+header .main-header-top-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:0 20px;
+}
+
+header .topbar-izq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .form{
+    background-color: #FFF;
+    /*border:none;*/
+    outline: none;
+    color: #666;
+    padding: 2px;
+    margin: 0;
+    width:auto;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+header .form .input{
+    margin-right:8px;
+    border: solid 1px greenyellow;
+}
+
+.copy-header{
+    color:#666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+h3{
+    font-size: 24px;
+}
+
+h3,
+.Descripciones{
+    color: #666;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+footer{
+    background-color: white;
+}
+
+
+main section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section article{
+    width: 100%;
+}
+
+main section article i{
+    background-color: #fff;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    color:#39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;    
+    right: 20px;
+    top: -15px;
+    position: absolute;
+    animation-name: rotacarro;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes rotacarro{
+    0% {    transform: rotate(-180deg);}
+    100% {transform: rotate(180deg);}
+}
+
+main section article img{
+    width: 100%;
+}
+
+p{
+    font-size:12px;
+}
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+/* BODY - HEADER */
+
+.banner{
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.banner-img{
+    width: 100%;
+    text-align: center;
+}
+
+#compraCuotas{
+    text-align: center;
+}
+
+
+.hamburguer-button{
+    border-radius: 8px;
+    background-color: #03264c;
+    color: #FFF;
+    display:block;
+    font-size: 18px;
+    margin: auto;
+    max-width:50px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.main-navbar a {
+    color: #222222;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* formulario */
+
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+
+
+.intereses{
+    display:flex;
+    flex-direction: column;
+    font-weight:normal;
+}
+
+
+.checkbox1{
+    margin-left:5px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.checkbox2{
+    margin: 10px 5px;
+    padding-top:0;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin:auto;
+    border-width: 1px;
+}
+
+.login-form form .control-formulario input:valid{
+    color: green;
+}
+
+.login-form form .control-formulario input:invalid{
+    color: red;
+}
+
+.login-form form .control-formulario input[type ="text"]:hover{
+    background-color: lightblue;
+    cursor:pointer;
+}
+
+header.main-header .logo{
+    width: 50%;
+    margin: 0 10px;
+}
+
+.boton-formulario{
+    background-color: #333333;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color .5s;
+}
+
+.boton-formulario:hover{
+    background-color: #bebebe;
+    cursor:pointer;
+}
+
+.perfil{
+    /*
+    display:flex;
+    justify-content: space-around;
+    */
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    font-style: normal;
+}
+/*  */
+
+/* MAIN - ARTICULOS*/
+.articulos{
+    background-color: white;
+    margin:10px 10px;
+    box-shadow:none;
+    transition: box-shadow 0.5s;
+}
+
+.articulos:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.articulos img{
+    background-color: #fff;    
+    margin: 10px 0px;
+    
+}
+
+.Descuentos,
+.Descripciones{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.Descuentos{
+    color: #39b54a;
+    width:70%;
+    text-align: center;
+    padding-right:  10px;
+
+}
+
+.Descripciones{
+    /*
+    display: none;
+    margin-top: 10px;
+    text-align: letf;
+    */
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s
+}
+
+.Descripciones:hover{
+    opacity: 0.5;
+    
+}
+
+.delivery {
+    display:block;
+    /*justify-content: flex-end;*/
+    position: relative;
+}
+
+div .footer-text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.f-texto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center; 
+    padding-top: 20px;
+    width: 100%;
+}
+
+.f-texto h4{
+    padding: 5px;
+}
+
+.f-texto p{
+    text-align: center;
+    width: 72%;
+
+}
+
+.copyright{
+    padding: 20px;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    background-color: white;
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info-articulo{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 0 15px;
+    display: block;
+    text-align: right;
+}
+
+.main{
+    width: 90%;
+    margin:0 auto;
+}
+
+
+.Precios{
+    font-size: 18px;
+    width:30%;
+    text-align: left;
+}
+
+.precio-descuento{
+
+    width: 100%;
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    padding-bottom: 10px;
+    padding-top:20px;
+}
+
+@media(min-width:576px){
+    header .form{
+        font-size: 13px;
+    }
+
+}
+
+@media(min-width:768px){
+    main section article{
+        width: 40%;
+    }
+
+
+    .intereses{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight:normal;
+    }
+
+
+    .footer-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .f-texto{
+        width: 50%;
+    }
+
+
+    .Descripciones{
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .topbar-izq{
+
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        margin: 0;
+        padding: 0;
+    }
+    
+    header .main-header-top-bar {
+        flex-direction: row;
+    } 
+/*
+    header .barra-busqueda .input{
+        border: 1px solid #000;
+        border-radius: 4px;
+    }
+
+    header .barra-busqueda .submit{
+        border: 1px solid #000;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+*/
+    .copy-header{
+        width: fit-content;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar{
+        margin-top: 30px;
+    }
+
+    .main-navbar {
+        /* border: dotted 2px red;
+        */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+}
+
+@media(min-width:1200px){
+    main section article{
+        width: 20%;
+    }
+
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    } 
+
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+  
+    article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+}

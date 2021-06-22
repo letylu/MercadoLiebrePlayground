@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <!-- Logotipo-->
+        <div class="main-header-top-bar">
+            <div class="topbar-izq">
+                <img src="/images/logo-mercado-liebre.svg" class="logo" alt="Logo de la empresa">
+                <!-- Barra de búsqueda-->
+                <div class="form" action="#" method="GET">
+                    <div class="input">Buscar productos, marcas</div>
+                    <div class="submit"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+
+                <!-- Comprá en cuotas y sin tarjeta de crédito-->
+            <div class="copy-header">
+                <i  class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </div>
+        </div>
+            <!-- Botón de hamburguesa -->
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+        <!-- Barra de navegación-->
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a  href="#">Ofertas</a></li>
+                <li><a  href="#">Tiendas Oficiales</a></li>
+                <li><a  href="#">Vender</a></li>
+                <li><a  href="#">Ayuda</a></li>
+            </ul>
+            <ul class="rigth-navbar">
+                <li><a  href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a  href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a  href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-form">
+        <form action="/loginForm" method="POST" class="create-form" >
+            <div class="control-formulario">
+                <label>Nombre de usuari@</label>
+                <input type="text" name="usuario" minlength="2" placeholder="Nombre de usuario" required class="control user">
+            </div>
+            <div class="control-formulario">
+                <label>Confirmar contraseña</label>
+                <input type="password" name="Contraseña" class="control" maxlength="8" required placeholder="Contraseña" class="control">
+            </div>
+            <a href="/">
+                <button type="submit" class="boton-formulario">Enviar</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>
